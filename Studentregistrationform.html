@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #e1dfdf;
+        }
+        .student-form {
+            background-color: #9e9e9e4e;
+            padding: 2em;
+            margin: 2em;
+            border-radius: .5em;
+        }
+        .form-heading {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 17pt;
+            color: rgb(60, 60, 60);
+            font-weight: 700;
+            margin: 0;
+            margin-bottom: -.4em;
+        }
+        .form-description {
+            font-family: "poppins";
+            font-size: 12pt;
+        }
+        .form-label {
+            font-family: "poppins";
+            font-weight: 400;
+        }
+        .form-label-1 {
+            font-family: "poppins";
+            font-size: 10pt;
+            font-weight: 400;
+        }
+        .form-text-box {
+            height: 2.3em;
+            width: 13em;
+            border: 2px solid #24246298;
+            background-color: #ffffffaf;
+            border-radius: .3em;
+            margin-top: 1em;
+        }
+        .form-text-box:focus {
+            outline: none;
+            border: 2px solid green;
+            box-shadow: 0px 5px 15px -3px #6c6c6c8d;
+        }
+        .form-gender {
+            margin-top: 1em;
+        }
+        ::-webkit-file-upload-button {
+            background-color: rgb(170, 170, 194);
+        }
+    </style>
+</head>
+<body>
+    <Section class="student-form">
+        <h3 class="form-heading">Student Registration</h3> 
+        <p class="form-description">Fill out the registration form carefully</p> 
+        <form>
+            <label for="first" class="form-label">Student Name</label>
+        </br>
+            <input type="text" id="first" class="form-text-box">
+            <input type="text" id="middle" class="form-text-box">
+            <input type="text" id="last" class="form-text-box"><br/>  
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="first" class="form-label-1 ">First Name</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="middle" class="form-label-1 ">Middle Name</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="last" class="form-label-1 ">Last Name</label>
+            <br/><br/>
+            <label for="gender" class="form-label">Gender</label><br/>
+            <div class="form-gender">
+                <input type="radio" name="gender" checked/><label>Male</label>
+                <input type="radio" name="gender" /><label>Female</label>
+                <input type="radio" name="gender" /><label>Others</label>
+            </div><br>
+            <label for="form-dob" class="form-label">Date of Birth</label><br>
+            <input id="form-dob" type="date" class="form-text-box"><br><br>
+            <label class="form-label">Education</label><br>
+            <select class="form-text-box">       
+                <option>Select Your Education</option>
+                <option>Primary Schooling</option>
+                <option>High School</option>     
+                <option>Bachelors</option>
+                <option>Masters</option>
+                <option>PhD</option>
+            </select><br><br>
+            <label class="form-label">Upload Your Photo</label>
+        <input type="file" class="form-file-box" accept="image/jpeg, image/png, image/jpg"><br><br>
+        <button>Submit</button>
+        <button>Clear</button>
+        </form>
+    </Section>  
+</body>
+</html>
